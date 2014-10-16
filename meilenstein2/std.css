@@ -2,6 +2,8 @@
 
 body {
 	background-color: rgb(26, 32, 94);
+	font-size: 48px;
+	color:white;
 }
 
 html, body { margin: 0; height: 100%; }
