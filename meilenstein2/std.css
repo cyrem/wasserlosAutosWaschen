@@ -1,38 +1,42 @@
 @CHARSET "ISO-8859-1";
 
 body {
-	background-color: rgb(26, 32, 94)
+	background-color: rgb(26, 32, 94);
+	margin: 0;
+	padding: 0;
+	height: 100%
 }
 
-
-
-.myTable {
-	margin: auto;
-	border-style: hidden; "
-	font-color: white;
-	vertical-align: middle;
+.text {
+	color: white;
 	font-size: 48px;
 }
 
-.myTable td {
-	padding: 5px;
-	margin: 0px;
+.textL {
+	text-align: right;
 }
 
-.redText {
-	text-color: rgb(136, 0, 22)
+.textR {
+	text-align: left;
 }
 
-.left {
-	border-right: solid;
-	border-with: 8px;
-	border-color: white;
+.mainDiv {
+	height: 400px;
+	width: 49%;
+	float: left;
 }
 
-.center {
-	margin: 100px;
-	border: solid;
-	border-with: 8px;
-	border-color: white;
-	font-size: 48px;
+.innerDiv {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	border: solid 4px white;
 }
+
+.innerEl {
+	float: left;
+	width: 45%;
+	padding: 10px
+}
+
