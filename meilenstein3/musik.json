@@ -1,16 +1,16 @@
 
 var musik ={"musik":[
-{"Interprete":"Interpreter","Albumtitel":" Albumtitel","Erscheinungsjahr":" Erscheinungsjahr","Genre":" Genre"},
-{"Interprete":"Farin Urlaub","Albumtitel":" Faszination Weltraum","Erscheinungsjahr":" 2014","Genre":" Punk"},
-{"Interprete":"Die Ärzte","Albumtitel":" Planet Punk","Erscheinungsjahr":" 1995","Genre":" Punk"},
-{"Interprete":"The Offspring","Albumtitel":" Smash","Erscheinungsjahr":" 1994","Genre":" Punk"},
-{"Interprete":"Blink 182","Albumtitel":" Enema of the State","Erscheinungsjahr":" 1999","Genre":" Punk"},
-{"Interprete":"Rise Against","Albumtitel":" Siren Song of the Counter Culture","Erscheinungsjahr":" 2004","Genre":" Punk"},
-{"Interprete":"Vampire Weekend","Albumtitel":" Vampire Weekend","Erscheinungsjahr":" 2007","Genre":" Punk"},
-{"Interprete":"Bouncing Souls","Albumtitel":" How I spent my summer vacation","Erscheinungsjahr":" 2001","Genre":" Punk"},
-{"Interprete":"Beatsteaks","Albumtitel":" Living Targets","Erscheinungsjahr":" 2002","Genre":" Punk"},
-{"Interprete":"Bloc Party","Albumtitel":" Silent Alarm","Erscheinungsjahr":" 2005","Genre":" Punk"},
-{"Interprete":"WIZO","Albumtitel":" Anderster","Erscheinungsjahr":" 2004","Genre":" Punk"}
+{"Interpreter":"Interpreter","Albumtitel":" Albumtitel","Erscheinungsjahr":" Erscheinungsjahr","Genre":" Genre"},
+{"Interpreter":"Farin Urlaub","Albumtitel":" Faszination Weltraum","Erscheinungsjahr":" 2014","Genre":" Punk"},
+{"Interpreter":"Die Ärzte","Albumtitel":" Planet Punk","Erscheinungsjahr":" 1995","Genre":" Punk"},
+{"Interpreter":"The Offspring","Albumtitel":" Smash","Erscheinungsjahr":" 1994","Genre":" Punk"},
+{"Interpreter":"Blink 182","Albumtitel":" Enema of the State","Erscheinungsjahr":" 1999","Genre":" Punk"},
+{"Interpreter":"Rise Against","Albumtitel":" Siren Song of the Counter Culture","Erscheinungsjahr":" 2004","Genre":" Punk"},
+{"Interpreter":"Vampire Weekend","Albumtitel":" Vampire Weekend","Erscheinungsjahr":" 2007","Genre":" Punk"},
+{"Interpreter":"Bouncing Souls","Albumtitel":" How I spent my summer vacation","Erscheinungsjahr":" 2001","Genre":" Punk"},
+{"Interpreter":"Beatsteaks","Albumtitel":" Living Targets","Erscheinungsjahr":" 2002","Genre":" Punk"},
+{"Interpreter":"Bloc Party","Albumtitel":" Silent Alarm","Erscheinungsjahr":" 2005","Genre":" Punk"},
+{"Interpreter":"WIZO","Albumtitel":" Anderster","Erscheinungsjahr":" 2004","Genre":" Punk"}
 
 ]
 
