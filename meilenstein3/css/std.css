@@ -2,7 +2,7 @@
 
 body {
 	background-color: rgb(26, 32, 94);
-	font-size: 36px;
+	font-size: 16px;
 	color:white;
 }
 
@@ -14,22 +14,17 @@ html, body { margin: 0; height: 100%; }
 	height:30%;
 	box-sizing: border-box;
     position: relative;
-    font-size:16px;
 }
 
 #leftScreen{
 	text-align:right;
-	/*border-right:solid;
-	border-right-width:2px;*/
 }
 
 #rightScreen{
 	text-align:left;
-	/*border-left:solid;
-	border-left-width:2px;*/
 }
 
-.blocklink {
+.screen span {
   	position: absolute;
   	top: 50%;
     transform: translateY(-50%);
@@ -41,39 +36,36 @@ html, body { margin: 0; height: 100%; }
     border-color: white;
 }
 
-#leftScreen .blocklink {
+#leftScreen span {
     right: 0;
     border-width:8px 4px 8px 8px;
-    /*8px 0 8px 8px;*/
 }
 
-#rightScreen .blocklink {
+#rightScreen span {
     left: 0;
     border-width:8px 8px 8px 4px;
-    /*8px 8px 8px 0;*/
+}
+
+.header{
+	font-size:36px;
 }
 
 .header span{
 	color: rgb(136, 0, 21);
 }
 
-a {
-	color:white;
-	text-decoration:none;
+.screen span:hover{
+	display:block;
+	color:black;
+	background-color:rgb(165, 169, 230);
+	cursor: pointer;
+	cursor: hand;
 }
 
-a:hover.blocklink{
+.screen span#selected{
 	display:block;
 	color:black;
 	background-color:rgb(0, 162, 232);
-}
-
-a:hover.normallink{
-	color:black;
-}
-
-a#smalllink{
-	font-size:20px;
 }
 
 .bottomRight {
@@ -88,8 +80,6 @@ a#smalllink{
     position: absolute;
     bottom: 0;
     right: 0;
-    
-    /*border: 1px solid white;*/
 }
 
 .topRight {
