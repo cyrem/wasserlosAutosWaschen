@@ -41,6 +41,8 @@ html, body {
 
 #datatable td {
 	border: solid white 8px;
+	border-bottom: solid white 4px;
+	border-top: solid white 4px;
 }
 
 #datatable th {
