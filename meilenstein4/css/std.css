@@ -123,3 +123,7 @@ a#smalllink{
  color: white;
  font-size: 48px;
 }
+
+.error{
+	border-color:red;
+}
