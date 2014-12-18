@@ -1,20 +1,5 @@
-/*
 
-only letters: onlyLetters(string)
-only numbers and letters: onlyLettersAndNumbers(string)
-year: isYear(string)
-two words: isTwoWords(string)
-name list: isNameList(string)
 
- */
-
-//function test(){
-//	var string="bla, bla, bla lol,g";
-//	if(isNameList(string))
-//		alert("true");
-//	else
-//		alert("false");
-//}
 var titelReg = "^[a-z0-9äöüÄÖÜ ]+$";
 var interpretReg = "^[a-zäöüÄÖÜ ]+$";
 var drehbuchReg = "^[a-zäöüÄÖÜ]+\\s[a-zäöüÄÖÜ]+$";
@@ -136,14 +121,8 @@ function isLetter(char) {
 		return true;
 	return false;
 }
-//
-//function isNumber(char) {
-//	var value = char.charCodeAt(0);
-//	if (value >= 48 && value <= 57)
-//		return true;
-//	return false;
-//}
-//
+
+
 function isSpace(char) {
 	var value = char.charCodeAt(0);
 	if (value == 32)
@@ -157,76 +136,7 @@ function isComma(char) {
 		return true;
 	return false;
 }
-//
-//function onlyLetters(string) {
-//	var i = 0;
-//	var valid = true;
-//	while (valid && i < string.length) {
-//		if (!isLetter(string.charAt(i))) {
-//			valid = false;
-//		}
-//		i++;
-//	}
-//	return valid;
-//}
-//
-//function onlyLettersAndNumbers(string) {
-//	var i = 0;
-//	var valid = true;
-//	while (valid && i < string.length) {
-//		if (!isLetter(string.charAt(i)) && !isNumber(string.charAt(i))) {
-//			valid = false;
-//		}
-//		i++;
-//	}
-//	return valid;
-//}
-//
-//function onlyNumbers(string) {
-//	var i = 0;
-//	var valid = true;
-//	while (valid && i < string.length) {
-//		if (!isNumber(string.charAt(i))) {
-//			valid = false;
-//		}
-//		i++;
-//	}
-//	return valid;
-//}
-//
-//function isYear(string) {
-//	var i = 0;
-//	var valid = onlyNumbers(string);
-//	if (valid) {
-//		if (parseInt(string) > new Date().getFullYear())
-//			valid = false;
-//	}
-//	return valid;
-//}
-//
-//function isTwoWords(string) {
-//	var gotSpace = false;
-//	var i = 0;
-//	var valid = true;
-//	while (valid && i < string.length) {
-//		if (!isLetter(string.charAt(i))) {
-//			if (gotSpace) {
-//				valid = false;
-//			} else {
-//				// no space at start and end
-//				if (i != 0 && i != string.length - 1
-//						&& isSpace(string.charAt(i))) {
-//					gotSpace = true;
-//				} else {
-//					valid = false;
-//				}
-//			}
-//		}
-//		i++;
-//	}
-//	return (valid && gotSpace);
-//}
-//
+
 function isNameList(string) {
 	if(string == "")
 		return false;

@@ -1,0 +1,144 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    background-color: rgb(26, 32, 94);
+    font-size: 16px;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.screen {
+    float: left;
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#leftScreen {
+    text-align: right;
+}
+
+#rightScreen {
+    text-align: left;
+}
+
+#datatable {
+    margin-top: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#datatable table {
+    border-collapse: collapse;
+    border: solid white 8px;
+}
+
+#datatable td {
+    border: solid white 8px;
+    border-bottom: solid white 4px;
+    border-top: solid white 4px;
+}
+
+#datatable th {
+    padding: 3px;
+    color: rgb(136, 0, 21);
+    border: solid white 8px;
+}
+
+.screen span {
+    margin-top:15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 70px;
+    border: solid;
+    text-align: center;
+    line-height: 400%;
+    border-color: white;
+}
+
+#leftScreen span {
+    right: 0;
+    border-width: 8px 4px 8px 8px;
+}
+
+#rightScreen span {
+    left: 0;
+    border-width: 8px 8px 8px 4px;
+}
+
+.header {
+    font-size: 36px;
+}
+
+.header span {
+    color: rgb(136, 0, 21);
+}
+
+.screen span:hover {
+    display: block;
+    color: black;
+    background-color: rgb(165, 169, 230);
+    cursor: pointer;
+    cursor: hand;
+}
+
+.screen span.selected {
+    display: block;
+    color: black;
+    background-color: rgb(0, 162, 232);
+}
+
+.bottomRight {
+    display: block;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.topRight {
+    display: block;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tableInput td {
+    padding: 10px;
+}
+
+.headDiv {
+    margin-left: 40%;
+}
+
+.textSmall {
+    font-size: 14px;
+    color: white;
+}
+.highLightBlue{
+    color:rgb(0,162,232);
+}
+
+.text {
+    color: white;
+    font-size: 48px;
+}
