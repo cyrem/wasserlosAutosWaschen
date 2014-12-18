@@ -3,27 +3,30 @@
 body {
 	background-color: rgb(26, 32, 94);
 	font-size: 48px;
-	color:white;
+	color: white;
 }
 
-html, body { margin: 0; height: 100%; }
+html, body {
+	margin: 0;
+	height: 100%;
+}
 
-.screen{
-	float:left;
-	width:50%;
-	height:100%;
+.screen {
+	float: left;
+	width: 50%;
+	height: 100%;
 	box-sizing: border-box;
-    position: relative;
+	position: relative;
 }
 
-#leftScreen{
-	text-align:right;
+#leftScreen {
+	text-align: right;
 	/*border-right:solid;
 	border-right-width:2px;*/
 }
 
-#rightScreen{
-	text-align:left;
+#rightScreen {
+	text-align: left;
 	/*border-left:solid;
 	border-left-width:2px;*/
 }
@@ -32,98 +35,110 @@ html, body { margin: 0; height: 100%; }
 	color: rgb(136, 0, 22)
 }
 
+.outerBox {
+	top: 20%;
+	left: 10%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
 .blocklink {
-  	position: absolute;
-  	top: 50%;
-    transform: translateY(-50%);
-  	width: 350px;
-  	height: 150px;
-  	border: solid;
-  	text-align:center;
-  	line-height:280%;
+	/*   	position: absolute;
+  	//top: 50%;
+  	    transform: translateY(-50%);
+    
+    margin:auto; */
     border-color: white;
+	height: 150px;
+	border: solid;
+	display: inline-block;
+	line-height: 280%;
+	text-align: center;
+	width: 350px;
+	float: left;
+	margin: 0 auto;
 }
 
 #leftScreen .blocklink {
-    right: 0;
-    border-width:8px 4px 8px 8px;
-    /*8px 0 8px 8px;*/
+	right: 0;
+	border-width: 8px 4px 8px 8px;
+	/*8px 0 8px 8px;*/
 }
 
 #rightScreen .blocklink {
-    left: 0;
-    border-width:8px 8px 8px 4px;
-    /*8px 8px 8px 0;*/
+	left: 0;
+	border-width: 8px 8px 8px 4px;
+	/*8px 8px 8px 0;*/
 }
 
 a {
-	color:white;
-	text-decoration:none;
+	color: white;
+	text-decoration: none;
 }
 
-a:hover.blocklink{
-	display:block;
-	color:black;
-	background-color:rgb(165, 169, 230);
+a:hover.blocklink {
+	
+	display: block;
+	color: black;
+	border-color:white;
+	background-color: rgb(165, 169, 230);
 }
 
-a:hover.normallink{
-	color:black;
+a:hover.normallink {
+	color: black;
 }
 
-a#smalllink{
-	font-size:20px;
+a#smalllink {
+	font-size: 20px;
 }
 
 .bottomRight {
-    display: block;
-    width: 200px;
-    height: 25px;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    margin:10px;
-    
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-    /*border: 1px solid white;*/
+	display: block;
+	width: 200px;
+	height: 25px;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	/*border: 1px solid white;*/
 }
 
 .topRight {
-    display: block;
-    width: 200px;
-    height: 25px;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    margin:10px;
-    
-    position: absolute;
-    top: 0;
-    right: 0;
+	display: block;
+	width: 200px;
+	height: 25px;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
-.tableInput td{
- padding:10px;
- 
+.tableInput td {
+	padding: 10px;
 }
 
-.headDiv{
- margin-left:40%; 
+.headDiv {
+	margin-left: 40%;
 }
 
-.textSmall{
- font-size:14px;
- color:white;
+.textSmall {
+	font-size: 14px;
+	color: white;
 }
 
 .text {
- color: white;
- font-size: 48px;
+	color: white;
+	font-size: 48px;
 }
 
-.error{
-	border-color:red;
+.error {
+	border-color: red;
 }
