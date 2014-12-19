@@ -76,10 +76,20 @@ html, body {
 
 .header {
     font-size: 36px;
+    width:50%;
+    float:left;
 }
 
 .header span {
     color: rgb(136, 0, 21);
+}
+
+#headerR{
+	 text-align:left;
+}
+
+#headerL{
+	 text-align:right;
 }
 
 .screen span:hover {
