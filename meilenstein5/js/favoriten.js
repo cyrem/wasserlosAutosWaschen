@@ -63,6 +63,21 @@ function createTable(arr) {
 	}
 }
 
+function get_json(url, fn) {
+	  http.get(url, function(res) {
+	    var body = '';
+	    res.on('data', function(chunk) {
+	      body += chunk;
+	    });
+
+	    res.on('end', function() {
+	      var response = JSON.parse(body);
+	      fn(response);
+	    });
+	  });
+	};
+// get_json('http://127.0.0.1/meilenstein5/php/getfavorites.php?data=music',createTable
+// get_json('http://127.0.0.1/meilenstein5/php/getfavorites.php?data=movies',createTable
 
 
 function go() {

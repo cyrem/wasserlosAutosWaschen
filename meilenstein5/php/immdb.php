@@ -6,7 +6,6 @@ function writeToFile($file, $data){
 		fwrite($file, $elem.",");
 	}
 	fwrite($file, "\n");
-	fclose($file);
 }
 
 function saveFilm(){
@@ -21,6 +20,8 @@ function saveFilm(){
 	$data[]=$params["schauspieler"];
 	$data[]=$params["filmgenre"];
 	writeToFile($file,$data);
+	fclose($file);
+	
 	echo "Submitted successfully! ".' <a href="../html/film.html">Go back</a>';
 }
 
@@ -35,6 +36,8 @@ function saveMusic(){
 	$data[]=$params["songs"];
 	$data[]=$params["musicgenre"];
 	writeToFile($file,$data);
+	fclose($file);
+	
 	echo "Submitted successfully! ".' <a href="../html/music.html">Go back</a>';
 }
 
