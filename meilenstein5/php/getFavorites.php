@@ -21,12 +21,12 @@ $verarbeiteJson = function($data){
 if (isset ( $_GET ['data'] )) {
 	//{"Filmtitel":"Filmtitel","Regie":"Regie","Drehbuch":"Drehbuch","Erscheinungsjahr":"Erscheinungsjahr","Genre":"Genre"},
 	if ($_GET ['data'] == "music") {
-		echo $verarbeiteJson(file_get_contents('music.txt'));
-		//echo json_encode(file_get_contents('music.txt'));
+		//echo $verarbeiteJson(file_get_contents('music.txt'));
+		echo json_encode(file_get_contents('../js/musik.json'));
 	}
 	if ($_GET ['data']== "movies") {
-		echo $verarbeiteJson(file_get_contents('film.txt'));
-		//echo json_encode(file_get_contents('film.txt'));
+		//echo $verarbeiteJson(file_get_contents('film.txt'));
+		echo json_encode(file_get_contents('../js/film.txt'));
 		
 	}
 }

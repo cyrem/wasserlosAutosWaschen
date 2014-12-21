@@ -1,5 +1,5 @@
 
-var musik =[
+[
 {"Interpreter":"Interpreter","Albumtitel":" Albumtitel","Erscheinungsjahr":" Erscheinungsjahr","Genre":" Genre"},
 {"Interpreter":"Farin Urlaub","Albumtitel":" Faszination Weltraum","Erscheinungsjahr":" 2014","Genre":" Punk"},
 {"Interpreter":"Die Ärzte","Albumtitel":" Planet Punk","Erscheinungsjahr":" 1995","Genre":" Punk"},

@@ -1,5 +1,5 @@
 
-var film = [
+[
 {"Filmtitel":"Filmtitel","Regie":"Regie","Drehbuch":"Drehbuch","Erscheinungsjahr":"Erscheinungsjahr","Genre":"Genre"},
 {"Filmtitel":"A Clockwork Orange","Regie":"Stanley ","Drehbuch":"Stanley Kubrick","Erscheinungsjahr":"1971","Genre":"Komödie"},
 {"Filmtitel":"Love Exposure","Regie":"Haruo Umekawa","Drehbuch":"Sion Sono","Erscheinungsjahr":"2008","Genre":"Psycho"},
