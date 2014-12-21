@@ -1,58 +1,59 @@
 <?php
-
-//functions
-function writeToFile($file, $data){
-	foreach($data as $elem){
-		fwrite($file, $elem.",");
+function saveFilm() {
+	global $params;
+	if (isset ( $params ["filmtitel"] ) && isset ( $params ["regie"] ) && isset ( $params ["drehbuch"] ) && isset ( $params ["filmerscheinungsjahr"] ) && isset ( $params ["schauspieler"] ) && isset ( $params ["filmgenre"] ))
+		$data = file_get_contents ( "film.txt" );
+	
+	if ($data != "") {
+		$data = json_decode ( $data, true );
 	}
-	fwrite($file, "\n");
-}
-
-function saveFilm(){
-	global $params;
-	if(!isset($params["filmtitel"]) || !isset($params["regie"]) || !isset($params["drehbuch"]) || 
-	   !isset($params["filmerscheinungsjahr"]) || !isset($params["schauspieler"]) || !isset($params["filmgenre"])) die;
-	$file=fopen("film.txt", "a") or die;
-	$data[]=$params["filmtitel"];
-	$data[]=$params["regie"];
-	$data[]=$params["drehbuch"];
-	$data[]=$params["filmerscheinungsjahr"];
-	$data[]=$params["schauspieler"];
-	$data[]=$params["filmgenre"];
-	writeToFile($file,$data);
-	fclose($file);
 	
-	echo "Submitted successfully! ".' <a href="../html/film.html">Go back</a>';
-}
-
-function saveMusic(){
-	global $params;
-	if(!isset($params["interpreter"]) || !isset($params["albumtitel"]) || !isset($params["musicerscheinungsjahr"]) || 
-	   !isset($params["songs"]) || !isset($params["musicgenre"])) die;
-	$file=fopen("music.txt", "a") or die;
-	$data[]=$params["interpreter"];
-	$data[]=$params["albumtitel"];
-	$data[]=$params["musicerscheinungsjahr"];
-	$data[]=$params["songs"];
-	$data[]=$params["musicgenre"];
-	writeToFile($file,$data);
-	fclose($file);
+	$data [] = array (
+			'Filmtitel' => $params ["filmtitel"],
+			'Regie' => $params ["regie"],
+			'Drehbuch' => $params ["drehbuch"],
+			'Erscheinungsjahr' => $params ["filmerscheinungsjahr"],
+			'Schauspieler' => $params ["schauspieler"],
+			'Genre' => $params ["filmgenre"] 
+	);
 	
-	echo "Submitted successfully! ".' <a href="../html/music.html">Go back</a>';
+	file_put_contents ( "film.txt", json_encode ( $data ) );
+	
+	echo "Submitted successfully! " . ' <a href="../html/film.html">Go back</a>';
+}
+function saveMusic() {
+	global $params;
+	if (isset ( $params ["interpreter"] ) && isset ( $params ["albumtitel"] ) && isset ( $params ["musicerscheinungsjahr"] ) && isset ( $params ["songs"] ) && isset ( $params ["musicgenre"] ))
+		$data = file_get_contents ( "music.txt" );
+	
+	if ($data != "") {
+		$data = json_decode ( $data, true );
+	}
+	
+	$data [] = array (
+			'Interpreter' => $params ["interpreter"],
+			'Albumtitel' => $params ["albumtitel"],
+			'Erscheinungsjahr' => $params ["musicerscheinungsjahr"],
+			'Songs' => $params ["songs"],
+			'Genre' => $params ["musicgenre"] 
+	);
+	file_put_contents ( "music.txt", json_encode ( $data ) );
+	
+	echo "Submitted successfully! " . ' <a href="../html/music.html">Go back</a>';
 }
 
-//program
+// program
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+if ($_SERVER ["REQUEST_METHOD"] == "GET") {
 	$params = $_GET;
-}
-else if ($_SERVER["REQUEST_METHOD"] == "POST") {
+} else if ($_SERVER ["REQUEST_METHOD"] == "POST") {
 	$params = $_POST;
 }
 
-if(!isset($params["file"])) die;
+if (! isset ( $params ["file"] ))
+	die ();
 
-if($params["file"]=="film")
-	saveFilm();
-else if($params["file"]=="music")
-	saveMusic();
+if ($params ["file"] == "film")
+	saveFilm ();
+else if ($params ["file"] == "music")
+	saveMusic ();

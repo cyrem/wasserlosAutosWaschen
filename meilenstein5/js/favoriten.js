@@ -35,17 +35,21 @@ function appendTr(tbl, arr) {
 }
 
 function get_json(url, fn) {
-	  http.get(url, function(res) {
-	    var body = '';
-	    res.on('data', function(chunk) {
-	      body += chunk;
-	    });
-
-	    res.on('end', function() {
-	      var response = JSON.parse(body);
-	      fn(response);
-	    });
-	  });
+	
+	var xmlhttp = new XMLHttpRequest();
+	
+	xmlhttp.onreadystatechange = function() {
+	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	        console.log(xmlhttp.responseText);
+	    	var myArr = JSON.parse(xmlhttp.responseText);
+	        
+	        fn(myArr);
+	    }
+	}
+	
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
 	};
 //get_json('http://127.0.0.1/meilenstein5/php/getfavorites.php?data=music',createTable
 //get_json('http://127.0.0.1/meilenstein5/php/getfavorites.php?data=movies',createTable
@@ -75,7 +79,7 @@ function createTable(arr) {
 	if (arr === 'film') {
 		document.getElementById("musikSpan").className = "";
 		document.getElementById("filmSpan").className = "selected";
-		get_json('http://127.0.0.1/wawPro/php/getfavorites.php?data=movies',loadData);
+		get_json('http://localhost/wawpro/meilenstein5/php/getfavorites.php?data=movies',loadData);
 		
 		//arr = film;
 		
@@ -83,7 +87,7 @@ function createTable(arr) {
 		document.getElementById("musikSpan").className = "selected";
 		document.getElementById("filmSpan").className = "";
 		//arr = musik;
-		get_json('http://127.0.0.1/wawPro/php/getfavorites.php?data=music',loadData);
+		get_json('http://localhost/wawpro/meilenstein5/php/getfavorites.php?data=music',loadData);
 				
 	}
 
