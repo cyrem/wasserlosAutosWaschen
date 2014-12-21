@@ -152,3 +152,12 @@ html, body {
     color: white;
     font-size: 48px;
 }
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

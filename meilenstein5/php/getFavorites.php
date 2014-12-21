@@ -26,7 +26,7 @@ if (isset ( $_GET ['data'] )) {
 	}
 	if ($_GET ['data']== "movies") {
 		//echo $verarbeiteJson(file_get_contents('film.txt'));
-		echo file_get_contents('../js/film.txt');
+		echo file_get_contents('../js/film.json');
 		
 	}
 }

@@ -74,7 +74,6 @@ a {
 }
 
 a:hover.blocklink {
-	
 	display: block;
 	color: black;
 	border-color:white;
@@ -82,7 +81,7 @@ a:hover.blocklink {
 }
 
 a:hover.normallink {
-	color: black;
+	text-decoration: underline;
 }
 
 a#smalllink {

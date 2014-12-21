@@ -79,7 +79,7 @@ function createTable(arr) {
 	if (arr === 'film') {
 		document.getElementById("musikSpan").className = "";
 		document.getElementById("filmSpan").className = "selected";
-		get_json('http://localhost/wawpro/meilenstein5/php/getfavorites.php?data=movies',loadData);
+		get_json('http://localhost:8080/WAW/wasserlosAutosWaschen/meilenstein5/php/getfavorites.php?data=movies',loadData);
 		
 		//arr = film;
 		
@@ -87,7 +87,7 @@ function createTable(arr) {
 		document.getElementById("musikSpan").className = "selected";
 		document.getElementById("filmSpan").className = "";
 		//arr = musik;
-		get_json('http://localhost/wawpro/meilenstein5/php/getfavorites.php?data=music',loadData);
+		get_json('http://localhost:8080/WAW/wasserlosAutosWaschen/meilenstein5/php/getfavorites.php?data=music',loadData);
 				
 	}
 
