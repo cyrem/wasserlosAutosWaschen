@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="../css/std.css">
+<script type="text/javascript" src="../js/validation.js"> </script>
+</head>
+<body>
+
+    <div class="headDiv">
+        <div class="text">
+            Film
+            <a class="normallink" href="home.html" id="smalllink">(zurück)</a>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+
+    <form action="http://localhost:8080/WAW/wasserlosAutosWaschen/meilenstein6/php/immdb.php" method="post">
+        <input type="hidden" name="file" value="film"/>
+        <table class="tableInput">
+            <tr>
+                <td>Filmtitel</td>
+                <td><input type="text" name="filmtitel" /></td>
+            </tr>
+            <tr>
+                <td>Regie</td>
+                <td><input type="text" name="regie" /></td>
+            </tr>
+            <tr>
+                <td>Drehbuch</td>
+                <td><input type="text" name="drehbuch" /></td>
+            </tr>
+            <tr>
+                <td>Erscheinungsjahr</td>
+                <td><input type="text" name="filmerscheinungsjahr" /></td>
+            </tr>
+            <tr>
+                <td>Schauspieler</td>
+                <td><textarea name="schauspieler"></textarea></td>
+            </tr>
+            <tr>
+                <td>Genre</td>
+                <td><select name="filmgenre">
+                        <option selected="selected" value="Horror">Horror</option>
+                        <option value="Psycho">Psycho</option>
+                        <option value="Krimi">Krimi</option>
+                        <option value="Doku">Doku</option>
+                        <option value="Komödie">Kom�die</option>
+                        <option value="Romanze">Romanze</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Favorit Markieren</td>
+                <td><input type="checkbox" name="filmfavorit"
+                    value="selected" /></td>
+            </tr>
+            <tr>
+                <td></td><td><input type="button" value="Film absenden" onclick="valMovie()"></td>
+            </tr>
+
+        </table>
+
+    </form>
+    
+    <div class="topRight">
+    	WasserlosAutosWaschen
+    </div>
+
+
+</body>
+
+
+
+</html>

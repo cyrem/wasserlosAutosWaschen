@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <link rel="stylesheet" type="text/css" href="../css/std.css"> -->
+<link rel="stylesheet" type="text/css" href="../css/favoriten.css">
+<script type="text/javascript" src="../js/film.json"></script>
+<script type="text/javascript" src="../js/musik.json"></script>
+<script type="text/javascript" src="../js/favoriten.js"> </script>
+
+<title>FilmAndMusic</title>
+</head>
+<body onload="go()">
+
+	<div>
+		<div id="headerL" class="header"><span>M</span>eine</div>
+		<div id="headerR" class="header"><span>F</span>avoriten</div>
+	</div>
+
+    <div class="screen" id="leftScreen">
+        <span onclick="createTable('musik')" id="musikSpan">Meine Musikfavoriten</span>
+    </div>
+
+    <div class="screen" id="rightScreen">
+        <span onclick="createTable('film')" id="filmSpan">Meine Filmfavoriten</span>
+        <a href="home.html">(zurück)</a>
+    </div>
+<div style="clear:both;"></div>
+    <div id="datatable"></div>
+
+    <div class="topRight">WasserlosAutosWaschen</div>
+</body>
+</html>
