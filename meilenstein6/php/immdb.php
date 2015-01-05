@@ -33,8 +33,8 @@ if (! isset ( $params ["file"] ))
 
 //connection
 $host = "127.0.0.1";
-$user = "root";
-$pwd = "jhsafk325534";
+$user = "localhost";
+$pwd = "localhost";
 $dbName = "waw";
 $con = new MySQLi($host, $user, $pwd, $dbName);
 $con->set_charset("UTF-16");

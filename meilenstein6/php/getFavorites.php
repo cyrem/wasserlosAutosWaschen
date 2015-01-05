@@ -10,7 +10,7 @@ $verarbeiteJson = function ($data) {
 	if ($data != "") {
 		
 		while ( $row = $data->fetch_assoc() ) {
-			if(!$group_arr){
+			if(!isset($group_arr) || !$group_arr){
 				$keys =array_keys($row);
 				foreach($keys as $k){
 					$newArr[$k] = $k;
@@ -27,8 +27,8 @@ if (isset ( $_GET ['data'] )) {
 	
 	// connection
 	$host = "127.0.0.1";
-	$user = "root";
-	$pwd = "jhsafk325534";
+	$user = "localhost";
+	$pwd = "localhost";
 	$dbName = "waw";
 	$con = new MySQLi ( $host, $user, $pwd, $dbName );
 	$con->set_charset ( "UTF-16" );
